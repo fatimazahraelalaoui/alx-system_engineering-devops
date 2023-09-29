@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 #Creates file in /var/run/myscript.pid containing its PID
-#
 
 echo "$$" > /var/run/myscript.pid
 
