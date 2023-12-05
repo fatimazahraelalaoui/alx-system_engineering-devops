@@ -10,11 +10,11 @@ apt-get -y install haproxy
 # edit config file
 server_config=\
 "
-frontend  fatimazahra-frontend
+frontend tapena-frontend
         bind *:80
         mode http
-        default_backend fatimazahra-backend
-backend yonas-backend
+        default_backend tapena-backend
+backend tapena-backend
         balance roundrobin
         server 405251-web-01 34.203.201.238:80 check
         server 405251-web-02 54.237.86.179:80 check
